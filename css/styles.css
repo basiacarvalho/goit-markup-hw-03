@@ -52,12 +52,15 @@ ul {
   color: var(--header-color);
 }
 
+.container {
+  width: 1600px;
+}
+
 /* Header */
-.main-container {
+.header-container {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 1600px;
 }
 
 .logo-header {
@@ -71,12 +74,6 @@ ul {
   column-gap: 50px;
   list-style: none;
   padding: 32px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  padding: 24px;
 }
 
 .header__menu {
