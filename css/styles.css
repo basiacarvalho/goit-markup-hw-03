@@ -24,6 +24,11 @@ ul {
   padding-inline-start: 0;
 }
 
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 /* styles for all pages*/
 .link {
   text-decoration: none;
@@ -45,6 +50,11 @@ ul {
   color: var(--active-color);
 }
 
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
 .section__header {
   font-size: 36px;
   line-height: 1.17;
@@ -53,6 +63,7 @@ ul {
 }
 
 .container {
+  justify-content: center;
   width: 1600px;
 }
 
@@ -60,12 +71,11 @@ ul {
 .header-container {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .logo-header {
   color: var(--logo-top-color);
-  margin-left: 215px;
   margin-right: 93px;
 }
 
@@ -108,6 +118,7 @@ ul {
   font-size: 44px;
   letter-spacing: 0.06em;
   line-height: 1.36;
+  margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -118,6 +129,8 @@ ul {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.87;
+  margin-left: 700px;
+  padding: 10px 41.5px;
   text-align: center;
   background-color: var(--active-color);
   border: none;
