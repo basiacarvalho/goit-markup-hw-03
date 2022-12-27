@@ -17,18 +17,15 @@ body {
 }
 
 ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
 }
 
-h1 {
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
+h1,
+h2,
+h3,
+ul,
 p {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -60,18 +57,39 @@ p {
   line-height: 1.17;
   text-align: center;
   color: var(--header-color);
+  padding-bottom: 50px;
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
   width: 1600px;
 }
 
 /* Header */
-.header-container {
-  align-items: center;
+.container-header {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 215px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .logo-header {
@@ -110,6 +128,9 @@ p {
 /*First section of the main page*/
 .banner {
   background-color: var(--background-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner__title {
@@ -130,10 +151,8 @@ p {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.87;
-  margin-left: 700px;
   margin-bottom: 200px;
   padding: 10px 41.5px;
-  text-align: center;
   background-color: var(--active-color);
   border: none;
   border-radius: 4px;
@@ -142,7 +161,6 @@ p {
 }
 
 /*Second section of the main page - LOREM IPSUM*/
-
 .feature {
   list-style: none;
 }
@@ -150,6 +168,7 @@ p {
 .feature__title {
   line-height: 1.14;
   color: var(--header-color);
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
@@ -159,34 +178,16 @@ p {
 
 .section__features {
   display: flex;
+  column-gap: 30px;
   justify-content: space-between;
-  width: 1170px;
 }
 
 /*Third section of the main page - What do we work with*/
 .boxes {
+  column-gap: 30px;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 1170px;
-}
-
-.box {
-  margin-top: 50px;
-}
-
-.third-section {
-  width: 1170px;
-}
-
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1600px;
 }
 
 /*Fourth section of the main page - Our Team*/
@@ -195,10 +196,10 @@ p {
 }
 
 .employees {
+  column-gap: 30px;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 1170px;
 }
 
 .employees__employee {
@@ -215,6 +216,7 @@ p {
   line-height: 1.19;
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .employee__subtitle {
@@ -225,17 +227,31 @@ p {
 }
 
 /*Footer*/
+.container-footer {
+  align-items: flex-start;
+}
+
 .footer {
   background-color: var(--background-color-dark);
+  width: 1600px;
 }
 
 .logo-footer {
   color: var(--main-color);
+  margin-bottom: 20px;
 }
 
 .contacts {
   line-height: 1.71;
   font-style: normal;
+}
+
+.contacts__contact {
+  list-style: none;
+}
+
+.contacts__contact:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contacts__contact-place {
@@ -247,6 +263,53 @@ p {
 }
 
 /* Portfolio page */
+
+.header-portfolio {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #ececec;
+  width: 1600px;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+
+  max-width: 1200px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  width: 572px;
+  list-style: none;
+}
+
+.filter__button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
+  padding: 6px 22px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.project {
+  flex-basis: calc((100%-30px) / 3);
+  padding: 10px;
+  background-color: var(--main-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #eeeeee;
+}
+
 .filter__button {
   color: var(--header-color);
   cursor: pointer;
@@ -274,9 +337,13 @@ p {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-left: 24px;
 }
 
 .project__subtitle {
   font-size: 16px;
   line-height: 1.88;
+  padding-left: 24px;
+  margin-top: 0;
 }
