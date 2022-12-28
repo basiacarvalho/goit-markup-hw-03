@@ -22,8 +22,8 @@
   </head>
   <body>
     <header class="header header-portfolio">
-      <div class="container header-container">
-        <nav class="header-container">
+      <div class="container container-header">
+        <nav class="header-navigation">
           <a class="link logo logo-header" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
@@ -47,22 +47,22 @@
         </ul>
       </div>
     </header>
-    <main class="section portfolio-container">
+    <main class="section">
       <div class="container">
         <ul class="filters">
           <li class="filter">
             <button class="filter__button" type="button">Wszystkie</button>
           </li>
-          <li class="filters">
+          <li class="filter">
             <button class="filter__button" type="button">Strony</button>
           </li>
-          <li class="filters">
+          <li class="filter">
             <button class="filter__button" type="button">Aplikacje</button>
           </li>
-          <li class="filters">
+          <li class="filter">
             <button class="filter__button" type="button">Dizajn</button>
           </li>
-          <li class="filters">
+          <li class="filter">
             <button class="filter__button" type="button">Marketing</button>
           </li>
         </ul>
@@ -75,8 +75,10 @@
               width="370"
               height="294"
             />
-            <h3 class="project__title">Technocrack</h3>
-            <p class="project__subtitle">Strona internetowa</p>
+            <div class="project__box">
+              <h3 class="project__title">Technocrack</h3>
+              <p class="project__subtitle">Strona internetowa</p>
+            </div>
           </li>
           <li class="project">
             <img
@@ -86,8 +88,10 @@
               width="370"
               height="294"
             />
-            <h3 class="project__title">Grafika New Orlean vs Golden Star</h3>
-            <p class="project__subtitle">Dizajn</p>
+            <div class="project__box">
+              <h3 class="project__title">Grafika New Orlean vs Golden Star</h3>
+              <p class="project__subtitle">Dizajn</p>
+            </div>
           </li>
           <li class="project">
             <img
@@ -97,8 +101,10 @@
               width="370"
               height="294"
             />
-            <h3 class="project__title">Restauracja Seafood</h3>
-            <p class="project__subtitle">Aplikacja</p>
+            <div class="project__box">
+              <h3 class="project__title">Restauracja Seafood</h3>
+              <p class="project__subtitle">Aplikacja</p>
+            </div>
           </li>
           <li class="project">
             <img
@@ -108,8 +114,10 @@
               width="370"
               height="294"
             />
-            <h3 class="project__title">Projekt Prime</h3>
-            <p class="project__subtitle">Marketing</p>
+            <div class="project__box">
+              <h3 class="project__title">Projekt Prime</h3>
+              <p class="project__subtitle">Marketing</p>
+            </div>
           </li>
           <li class="project">
             <img
@@ -119,8 +127,10 @@
               width="370"
               height="294"
             />
-            <h3 class="project__title">Projekt Boxes</h3>
-            <p class="project__subtitle">Aplikacja</p>
+            <div class="project__box">
+              <h3 class="project__title">Projekt Boxes</h3>
+              <p class="project__subtitle">Aplikacja</p>
+            </div>
           </li>
           <li class="project">
             <img
@@ -130,13 +140,17 @@
               width="370"
               height="294"
             />
-            <h3 class="project__title">Inspiration has no Borders</h3>
-            <p class="project__subtitle">Strona internetowa</p>
+            <div class="project__box">
+              <h3 class="project__title">Inspiration has no Borders</h3>
+              <p class="project__subtitle">Strona internetowa</p>
+            </div>
           </li>
           <li class="project">
             <img src="images/magazine.jpg" alt="an open magazine" width="370" height="294" />
-            <h3 class="project__title">Magazyn Limited Edition</h3>
-            <p class="project__subtitle">Dizajn</p>
+            <div class="project__box">
+              <h3 class="project__title">Magazyn Limited Edition</h3>
+              <p class="project__subtitle">Dizajn</p>
+            </div>
           </li>
           <li class="project">
             <img
@@ -146,8 +160,10 @@
               width="370"
               height="294"
             />
-            <h3 class="project__title">Projekt LAB</h3>
-            <p class="project__subtitle">Marketing</p>
+            <div class="project__box">
+              <h3 class="project__title">Projekt LAB</h3>
+              <p class="project__subtitle">Marketing</p>
+            </div>
           </li>
           <li class="project">
             <img
@@ -157,14 +173,16 @@
               width="370"
               height="294"
             />
-            <h3 class="project__title">Growing Business</h3>
-            <p class="project__subtitle">Aplikacja</p>
+            <div class="project__box">
+              <h3 class="project__title">Growing Business</h3>
+              <p class="project__subtitle">Aplikacja</p>
+            </div>
           </li>
         </ul>
       </div>
     </main>
-    <footer class="footer">
-      <div class="container">
+    <footer class="section footer">
+      <div class="container container-footer">
         <a class="link logo logo-footer" href="./index.html">
           <span class="logo__accent">Web</span>Studio
         </a>
@@ -184,7 +202,7 @@
                 >info@example.com</a
               >
             </li>
-            <li>
+            <li class="contacts__contact">
               <a class="link contacts__contact-item" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>
