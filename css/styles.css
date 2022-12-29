@@ -80,6 +80,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 24.5px 0;
 }
 
 .header-navigation {
@@ -96,7 +97,6 @@ p {
   display: flex;
   column-gap: 50px;
   list-style: none;
-  padding: 32px;
 }
 
 .header__menu {
