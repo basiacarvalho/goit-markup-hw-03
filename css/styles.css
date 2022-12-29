@@ -17,6 +17,7 @@ body {
 }
 
 ul {
+  list-style: none;
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
@@ -61,12 +62,8 @@ p {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .section {
@@ -74,17 +71,15 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1600px;
+  padding: 94px 0;
 }
 
 /* Header */
 .container-header {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 215px;
 }
 
 .header-navigation {
@@ -128,9 +123,6 @@ p {
 /*First section of the main page*/
 .banner {
   background-color: var(--background-color-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .banner__title {
@@ -140,7 +132,7 @@ p {
   letter-spacing: 0.06em;
   line-height: 1.36;
   margin-bottom: 30px;
-  padding-top: 200px;
+  padding-top: 106px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -155,16 +147,12 @@ p {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.87;
-  margin-bottom: 200px;
-  padding: 10px 41.5px;
+  margin: 30px 500px 76px;
+  padding: 10px 41px;
   text-decoration: none;
 }
 
 /*Second section of the main page - LOREM IPSUM*/
-.feature {
-  list-style: none;
-}
-
 .feature__title {
   color: var(--header-color);
   line-height: 1.14;
@@ -187,7 +175,6 @@ p {
   column-gap: 30px;
   display: flex;
   justify-content: space-between;
-  list-style: none;
 }
 
 /*Fourth section of the main page - Our Team*/
@@ -195,7 +182,6 @@ p {
   column-gap: 30px;
   display: flex;
   justify-content: space-between;
-  list-style: none;
 }
 
 .employees__employee {
@@ -229,29 +215,25 @@ p {
 /*Footer*/
 .container-footer {
   align-items: flex-start;
+  padding: 60px 0;
 }
 
 .footer {
   background-color: var(--background-color-dark);
-  width: 1600px;
 }
 
 .logo-footer {
   color: var(--main-color);
-  margin-bottom: 20px;
 }
 
 .contacts {
   line-height: 1.71;
   font-style: normal;
-}
-
-.contacts__contact {
-  list-style: none;
+  margin-top: 20px;
 }
 
 .contacts__contact:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 4.5px;
 }
 
 .contacts__contact-item {
@@ -267,14 +249,12 @@ p {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-color: #ececec;
-  width: 1600px;
 }
 
 .filters {
   column-gap: 8px;
   display: flex;
   justify-content: center;
-  list-style: none;
   margin-bottom: 16px;
 }
 
@@ -304,7 +284,6 @@ p {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin-top: 34px;
   row-gap: 30px;
 }
