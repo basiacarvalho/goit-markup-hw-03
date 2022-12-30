@@ -294,12 +294,8 @@ p {
 }
 
 .project__box {
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-right-style: solid;
-  border-top-style: none;
-  border-width: 1px;
-  border-color: #eee;
+  border: 1px solid #eee;
+  border-top: none;
   width: 370px;
 }
 
